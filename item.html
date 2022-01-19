@@ -28,9 +28,9 @@
                     <a class="nav-link" href="#">Orders</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Items</a>
+                    <a class="nav-link active" href="#">Items</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Customers</a>
                 </li>
                 <li class="nav-item">
@@ -57,25 +57,25 @@
     <div class="container">
         <div class="row justify-content-sm-between mb-5">
             <div class="col-12 bg-secondary bg-opacity-25" style="max-height: 33px">
-                <h1 class="fs-3 mb-3">Customer<i class="fas fa-user-friends"></i></h1>
+                <h1 class="fs-3 mb-3">Item<i class="fas fa-shopping-bag"></i></h1>
             </div>
         </div>
-        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item "><a href="#" style="text-decoration: none">Home</a></li>
-                <li aria-current="page" class="breadcrumb-item active">Customer</li>
+                <li class="breadcrumb-item "><a href="#"style="text-decoration: none">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Items</li>
             </ol>
         </nav>
         <div class="row justify-content-sm-between bg-secondary bg-opacity-10">
             <div class="col-6">
                 <form>
                     <div class="mb-3">
-                        <label class="form-label" for="exampleInputEmail1">Search Customer</label>
+                        <label class="form-label" for="exampleInputEmail1">Search Items</label>
                         <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1"
-                               placeholder="Input Name/NIC"
+                               placeholder="Input Item Name/Code"
                                type="email">
                     </div>
-                    <button class="btn btn-primary btn-sm" type="submit">Submit</button>
+                    <button class="btn btn-primary btn-sm" type="submit">Search</button>
                     <div class="dropdown d-inline">
                         <button aria-expanded="false" class="btn border dropdown-toggle btn-sm shadow-none"
                                 data-bs-toggle="dropdown"
@@ -100,7 +100,7 @@
             -->
                 <button class="btn btn-outline-success btn-sm shadow-none" data-bs-target="#exampleModal"
                         data-bs-toggle="modal"
-                        data-bs-whatever="@mdo" type="button">Add Customer
+                        data-bs-whatever="@mdo" type="button">Add Item
                 </button>
                 <button class="btn btn-outline-dark btn-sm shadow-none" type="button">View All</button>
 
@@ -109,20 +109,20 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Add Customer</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Add Item</h5>
                                 <button aria-label="Close" class="btn-close shadow-none" data-bs-dismiss="modal"
                                         type="button"></button>
                             </div>
                             <div class="modal-body">
                                 <form>
                                     <div class="mb-3">
-                                        <label class="col-form-label" for="recipient-name">Customer ID:</label>
+                                        <label class="col-form-label" for="recipient-name">Item ID:</label>
                                         <input class="form-control input-group-sm" id="recipient-id" type="text">
-                                        <label class="col-form-label" for="recipient-name">Customer Name:</label>
+                                        <label class="col-form-label" for="recipient-name">Item Name:</label>
                                         <input class="form-control" id="recipient-name" type="text">
-                                        <label class="col-form-label" for="recipient-name">Customer Address:</label>
+                                        <label class="col-form-label" for="recipient-name">Item Price:</label>
                                         <input class="form-control" id="recipient-address" type="text">
-                                        <label class="col-form-label" for="recipient-name">Customer Salary:</label>
+                                        <label class="col-form-label" for="recipient-name">Item Quantity:</label>
                                         <input class="form-control" id="recipient-salary" type="text">
                                     </div>
                                 </form>
@@ -145,61 +145,60 @@
                 <table class="table caption-top ">
                     <thead class="thead-dark">
                     <tr>
-                        <th scope="col">Customer Id</th>
+                        <th scope="col">Item Id</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Address</th>
-                        <th scope="col">Salary</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
+                        <td>I-001</td>
+                        <td>Munchee Cracker</td>
+                        <td>250.00</td>
+                        <td>100</td>
+                    </tr><tr>
+                        <td>I-001</td>
+                        <td>Munchee Cracker</td>
+                        <td>250.00</td>
+                        <td>100</td>
+                    </tr><tr>
+                        <td>I-001</td>
+                        <td>Munchee Cracker</td>
+                        <td>250.00</td>
+                        <td>100</td>
+                    </tr><tr>
+                        <td>I-001</td>
+                        <td>Munchee Cracker</td>
+                        <td>250.00</td>
+                        <td>100</td>
+                    </tr><tr>
+                        <td>I-001</td>
+                        <td>Munchee Cracker</td>
+                        <td>250.00</td>
+                        <td>100</td>
+                    </tr><tr>
+                        <td>I-001</td>
+                        <td>Munchee Cracker</td>
+                        <td>250.00</td>
+                        <td>100</td>
+                    </tr><tr>
+                        <td>I-001</td>
+                        <td>Munchee Cracker</td>
+                        <td>250.00</td>
+                        <td>100</td>
+                    </tr><tr>
+                        <td>I-001</td>
+                        <td>Munchee Cracker</td>
+                        <td>250.00</td>
+                        <td>100</td>
+                    </tr><tr>
+                        <td>I-001</td>
+                        <td>Munchee Cracker</td>
+                        <td>250.00</td>
+                        <td>100</td>
                     </tr>
-                    <tr>
 
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
-
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
-
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
-
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
-
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
-
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
                     </tbody>
                 </table>
             </div>
