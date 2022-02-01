@@ -7,11 +7,11 @@
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/a439b50eb0.js"></script>
     <style>
-        #item{
+        #item {
             display: none;
         }
 
-        #customer{
+        #customer {
             display: none;
         }
     </style>
@@ -61,235 +61,250 @@
 </nav>
 
 
-<div id="invoice" class="container-fluid col-12 mt-3">
-        <div class="row bg-secondary bg-opacity-10">
-            <div class="col-4 bg-light">
-                <!--<div class="mb-3">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
-                </div><div class="mb-3">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
-                </div><div class="mb-3">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
-                </div><div class="mb-3">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
-                </div>-->
-                <div class="container">
-                    <div class="row bg-primary h-25">
-                        <div class="modal-header">
-                            <h5 class="modal-title text-light" id="exampleModalLabel">Invoice Details</h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <label for="recipient-name" class="col-form-label">Order Id:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="col-6">
-                            <label for="recipient-name" class="col-form-label">Date:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                          <!--  <label for="recipient-name" class="col-form-label">Recipient:</label>
-                            <input type="text" class="form-control" id="recipient-name">-->
-                            <div class="dropdown">
-                                <label for="dropdownMenuButton7" class="col-form-label">Customer:</label>
-                                <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown button
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <label for="recipient-name" class="col-form-label">Customer Id:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <label for="recipient-name" class="col-form-label">Customer Name:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="col-6">
-                            <label for="recipient-name" class="col-form-label">Customer Salary:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12">
-                            <label for="recipient-name" class="col-form-label">Customer Address:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
+<div class="container-fluid col-12 mt-3" id="invoice">
+    <div class="row bg-secondary bg-opacity-10">
+        <div class="col-4 bg-light">
+            <!--<div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div><div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div><div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div><div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div>-->
+            <div class="container">
+                <div class="row bg-primary h-25">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Invoice Details</h5>
                     </div>
                 </div>
-            </div>
-            <div class="col-5 bg-light">
-                <div class="container">
-                    <div class="row bg-primary h-25">
-                        <div class="modal-header">
-                            <h5 class="modal-title text-light" id="exampleModalLabel">Item Select</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <label class="col-form-label" for="recipient-name">Order Id:</label>
+                        <input class="form-control" id="recipient-name" type="text">
+                    </div>
+                    <div class="col-6">
+                        <label class="col-form-label" for="recipient-name">Date:</label>
+                        <input class="form-control" id="recipient-name" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <!--  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                          <input type="text" class="form-control" id="recipient-name">-->
+                        <div class="dropdown">
+                            <label class="col-form-label" for="dropdownMenuButton7">Customer:</label>
+                            <button aria-expanded="false" class="btn border dropdown-toggle" data-bs-toggle="dropdown"
+                                    id="dropdownMenuButton7" type="button">
+                                Dropdown button
+                            </button>
+                            <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="dropdown">
-                                <label for="dropdownMenuButton8" class="col-form-label">Select Item:</label>
-                                <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton8" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown button
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton8">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <label for="recipient-name" class="col-form-label">Code:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
+                    <div class="col-6">
+                        <label class="col-form-label" for="recipient-name">Customer Id:</label>
+                        <input class="form-control" id="recipient-name" type="text">
                     </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <!--  <label for="recipient-name" class="col-form-label">Recipient:</label>
-                              <input type="text" class="form-control" id="recipient-name">-->
-                            <label for="recipient-name" class="col-form-label">Item Name:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="col-4">
-                            <label for="recipient-name" class="col-form-label">Price:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div><div class="col-4">
-                            <label for="recipient-name" class="col-form-label">Qty On hand:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label class="col-form-label" for="recipient-name">Customer Name:</label>
+                        <input class="form-control" id="recipient-name" type="text">
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <label for="recipient-name" class="col-form-label">Order Qty:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                    <div class="row justify-content-end mt-4">
-                        <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-sm">Add Item</button>
-                        </div>
+                    <div class="col-6">
+                        <label class="col-form-label" for="recipient-name">Customer Salary:</label>
+                        <input class="form-control" id="recipient-name" type="text">
                     </div>
                 </div>
 
-            </div>
-            <div class="col-3 bg-light">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="alert alert-info" role="alert">
-                               Total : Rs. 2145.50
-                            </div>
-                        </div>
-                    </div> <div class="row">
-                        <div class="col-12">
-                            <div class="alert alert-info" role="alert">
-                               Sub Total : Rs. 5000.00
-                            </div>
-                        </div>
-                    </div><div class="row">
-                        <div class="col-6">
-                            <label for="recipient-name" class="col-form-label">Cash:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div><div class="col-6">
-                    <label for="recipient-name" class="col-form-label">Discount:</label>
-                    <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div><div class="row">
-                        <div class="col-12">
-                            <label for="recipient-name" class="col-form-label">Balance:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                            <button type="button" class="btn btn-success btn-sm mt-3">Purchase</button>
-                        </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label class="col-form-label" for="recipient-name">Customer Address:</label>
+                        <input class="form-control" id="recipient-name" type="text">
                     </div>
                 </div>
             </div>
         </div>
+        <div class="col-5 bg-light">
+            <div class="container">
+                <div class="row bg-primary h-25">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Item Select</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="dropdown">
+                            <label class="col-form-label" for="dropdownMenuButton8">Select Item:</label>
+                            <button aria-expanded="false" class="btn border dropdown-toggle" data-bs-toggle="dropdown"
+                                    id="dropdownMenuButton8" type="button">
+                                Dropdown button
+                            </button>
+                            <ul aria-labelledby="dropdownMenuButton8" class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label class="col-form-label" for="recipient-name">Code:</label>
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <!--  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                          <input type="text" class="form-control" id="recipient-name">-->
+                        <label class="col-form-label" for="recipient-name">Item Name:</label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-4">
+                        <label class="col-form-label" for="recipient-name">Price:</label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-4">
+                        <label class="col-form-label" for="recipient-name">Qty On hand:</label>
+                        <input class="form-control" id="recipient-name" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label class="col-form-label" for="recipient-name">Order Qty:</label>
+                        <input class="form-control" id="recipient-name" type="text">
+                    </div>
+                </div>
+                <div class="row justify-content-end mt-4">
+                    <div class="col-3">
+                        <button class="btn btn-primary btn-sm" type="button">Add Item</button>
+                    </div>
+                </div>
+            </div>
 
-        <div class="row bg-secondary bg-opacity-10 mt-3">
-            <div class="col-12 overflow-auto" style="max-height: 150px">
-                <table class="table caption-top ">
-                    <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">Item Id</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Quantity</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr>
-
-                    </tbody>
-                </table>
+        </div>
+        <div class="col-3 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-info" role="alert">
+                            Total : Rs. 2145.50
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-info" role="alert">
+                            Sub Total : Rs. 5000.00
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label class="col-form-label" for="recipient-name">Cash:</label>
+                        <input class="form-control" id="recipient-name" type="text">
+                    </div>
+                    <div class="col-6">
+                        <label class="col-form-label" for="recipient-name">Discount:</label>
+                        <input class="form-control" id="recipient-name" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label class="col-form-label" for="recipient-name">Balance:</label>
+                        <input class="form-control" id="recipient-name" type="text">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <button class="btn btn-success btn-sm mt-3" type="button">Purchase</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-<div id="customer" class="container-fluid col-10 mt-4">
+
+    <div class="row bg-secondary bg-opacity-10 mt-3">
+        <div class="col-12 overflow-auto" style="max-height: 150px">
+            <table class="table caption-top ">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Item Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>I-001</td>
+                    <td>Munchee Cracker</td>
+                    <td>250.00</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>I-001</td>
+                    <td>Munchee Cracker</td>
+                    <td>250.00</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>I-001</td>
+                    <td>Munchee Cracker</td>
+                    <td>250.00</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>I-001</td>
+                    <td>Munchee Cracker</td>
+                    <td>250.00</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>I-001</td>
+                    <td>Munchee Cracker</td>
+                    <td>250.00</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>I-001</td>
+                    <td>Munchee Cracker</td>
+                    <td>250.00</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>I-001</td>
+                    <td>Munchee Cracker</td>
+                    <td>250.00</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>I-001</td>
+                    <td>Munchee Cracker</td>
+                    <td>250.00</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>I-001</td>
+                    <td>Munchee Cracker</td>
+                    <td>250.00</td>
+                    <td>100</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="container-fluid col-10 mt-4" id="customer">
 
     <div class="container">
         <div class="row justify-content-sm-between mb-5">
@@ -354,13 +369,13 @@
                                 <form>
                                     <div class="mb-3">
                                         <label class="col-form-label" for="recipient-name">Customer ID:</label>
-                                        <input class="form-control input-group-sm" id="recipient-id" type="text">
+                                        <input class="form-control input-group-sm" id="cus-id" type="text">
                                         <label class="col-form-label" for="recipient-name">Customer Name:</label>
-                                        <input class="form-control" id="recipient-name" type="text">
+                                        <input class="form-control" id="cus-name" type="text">
                                         <label class="col-form-label" for="recipient-name">Customer Address:</label>
-                                        <input class="form-control" id="recipient-address" type="text">
+                                        <input class="form-control" id="cus-address" type="text">
                                         <label class="col-form-label" for="recipient-name">Customer Salary:</label>
-                                        <input class="form-control" id="recipient-salary" type="text">
+                                        <input class="form-control" id="cus-salary" type="text">
                                     </div>
                                 </form>
                             </div>
@@ -368,7 +383,7 @@
                                 <button class="btn btn-secondary btn-sm shadow-none" data-bs-dismiss="modal"
                                         type="button">Close
                                 </button>
-                                <button class="btn btn-primary btn-sm shadow-none" type="button">Save</button>
+                                <button class="btn btn-primary btn-sm shadow-none" type="button" id="saveCustomer">Save</button>
                                 <button class="btn btn-info btn-sm shadow-none" type="button">Renew</button>
                             </div>
                         </div>
@@ -379,7 +394,7 @@
 
         <div class="row bg-secondary bg-opacity-10">
             <div class="col-12 overflow-auto mt-5" style="max-height: 200px">
-                <table class="table caption-top ">
+                <table class="table caption-top table-hover">
                     <thead class="thead-dark">
                     <tr>
                         <th scope="col">Customer Id</th>
@@ -388,62 +403,16 @@
                         <th scope="col">Salary</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
+                    <tbody id="customerTable">
 
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
 
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
-
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
-
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
-
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
-
-                        <td>C-001</td>
-                        <td>Kasun</td>
-                        <td>Matara</td>
-                        <td>200000</td>
-                    </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </div>
-<div  id="item" class="container-fluid col-10 mt-4">
+<div class="container-fluid col-10 mt-4" id="item">
 
     <div class="container">
         <div class="row justify-content-sm-between mb-5">
@@ -451,10 +420,10 @@
                 <h1 class="fs-3 mb-3">Item<i class="fas fa-shopping-bag"></i></h1>
             </div>
         </div>
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item "><a href="#"style="text-decoration: none">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Items</li>
+                <li class="breadcrumb-item "><a href="#" style="text-decoration: none">Home</a></li>
+                <li aria-current="page" class="breadcrumb-item active">Items</li>
             </ol>
         </nav>
         <div class="row justify-content-sm-between bg-secondary bg-opacity-10">
@@ -489,32 +458,31 @@
             <div class="col-3">
                 <!--<button type="button" class="btn btn-outline-success btn-sm">Add Customer</button>
             -->
-                <button class="btn btn-outline-success btn-sm shadow-none" data-bs-target="#exampleModal"
+                <button class="btn btn-outline-success btn-sm shadow-none" data-bs-target="#exampleModal2"
                         data-bs-toggle="modal"
                         data-bs-whatever="@mdo" type="button">Add Item
                 </button>
                 <button class="btn btn-outline-dark btn-sm shadow-none" type="button">View All</button>
 
-                <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"
+                <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal2"
                      tabindex="-1">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Add Item</h5>
-                                <button aria-label="Close" class="btn-close shadow-none" data-bs-dismiss="modal"
-                                        type="button"></button>
+                                <h5 class="modal-title" id="exampleModalLabel2">Add Item</h5>
+                                <button aria-label="Close" class="btn-close shadow-none" data-bs-dismiss="modal" type="button"></button>
                             </div>
                             <div class="modal-body">
                                 <form>
                                     <div class="mb-3">
                                         <label class="col-form-label" for="recipient-name">Item ID:</label>
-                                        <input class="form-control input-group-sm" id="recipient-id" type="text">
+                                        <input class="form-control input-group-sm" id="Item-id" type="text">
                                         <label class="col-form-label" for="recipient-name">Item Name:</label>
-                                        <input class="form-control" id="recipient-name" type="text">
+                                        <input class="form-control" id="item-name" type="text">
                                         <label class="col-form-label" for="recipient-name">Item Price:</label>
-                                        <input class="form-control" id="recipient-address" type="text">
+                                        <input class="form-control" id="item-price" type="text">
                                         <label class="col-form-label" for="recipient-name">Item Quantity:</label>
-                                        <input class="form-control" id="recipient-salary" type="text">
+                                        <input class="form-control" id="item-qty" type="text">
                                     </div>
                                 </form>
                             </div>
@@ -522,7 +490,7 @@
                                 <button class="btn btn-secondary btn-sm shadow-none" data-bs-dismiss="modal"
                                         type="button">Close
                                 </button>
-                                <button class="btn btn-primary btn-sm shadow-none" type="button">Save</button>
+                                <button class="btn btn-primary btn-sm shadow-none" type="button" id="save-item">Save</button>
                                 <button class="btn btn-info btn-sm shadow-none" type="button">Renew</button>
                             </div>
                         </div>
@@ -533,7 +501,7 @@
 
         <div class="row bg-secondary bg-opacity-10">
             <div class="col-12 overflow-auto mt-5" style="max-height: 200px">
-                <table class="table caption-top ">
+                <table class="table caption-top table-hover">
                     <thead class="thead-dark">
                     <tr>
                         <th scope="col">Item Id</th>
@@ -542,53 +510,8 @@
                         <th scope="col">Quantity</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr><tr>
-                        <td>I-001</td>
-                        <td>Munchee Cracker</td>
-                        <td>250.00</td>
-                        <td>100</td>
-                    </tr>
+                    <tbody id="itemTable">
+
 
                     </tbody>
                 </table>
@@ -598,16 +521,15 @@
 </div>
 
 
-
-
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/jquery/jquery-3.6.0.min.js"></script>
 <script>
-    document.getElementById("load-customers").addEventListener("click", function (){
+    document.getElementById("load-customers").addEventListener("click", function () {
         document.getElementById("invoice").style.display = "none";
         document.getElementById("item").style.display = "none";
         document.getElementById("customer").style.display = "block";
     })
-    document.getElementById("load-items").addEventListener("click", function (){
+    document.getElementById("load-items").addEventListener("click", function () {
         document.getElementById("invoice").style.display = "none";
         document.getElementById("item").style.display = "block";
         document.getElementById("customer").style.display = "none";
@@ -617,6 +539,54 @@
         document.getElementById("item").style.display = "none";
         document.getElementById("customer").style.display = "none";
     })
+
+    $("#saveCustomer").click(function () {
+
+        //gather customer information
+        let customerID = $("#cus-id").val();
+        let customerName = $("#cus-name").val();
+        let customerAddress = $("#cus-address").val();
+        let customerSalary = $("#cus-salary").val();
+
+        /*create a html row*/
+        let row = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerAddress}</td><td>${customerSalary}</td></tr>`;
+
+        /*select the table body and append the row */
+        $("#customerTable").append(row);
+
+
+        //bind the event after the row was added
+        $("#customerTable>tr").click(function(){
+            console.log(this);
+        });
+
+
+    });
+
+    $("#save-item").click(function () {
+
+        //gather customer information
+        let itemID = $("#Item-id").val();
+        let itemName = $("#item-name").val();
+        let itemPrice = $("#item-price").val();
+        let itemQty = $("#item-qty").val();
+
+        /*create a html row*/
+        let row = `<tr><td>${itemID}</td><td>${itemName}</td><td>${itemPrice}</td><td>${itemQty}</td></tr>`;
+
+        /*select the table body and append the row */
+        $("#itemTable").append(row);
+
+
+        //bind the event after the row was added
+        $("#itemTable>tr").click(function(){
+            console.log(this);
+        });
+
+
+    });
+
+
 </script>
 </body>
 </html>
